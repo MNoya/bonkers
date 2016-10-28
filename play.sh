@@ -19,7 +19,9 @@ case "$BUTTON_NOW $LID_NOW $BUTTON_PREV $LID_PREV" in
 
     "1 1"*)
         # Button being pressed, lid open
-        play -q sound.mp3 &
+        if pgrep play; then pkill play; fi
+        echo "Playing sound"
+        play -q ~/bonkers/sound.mp3 &
         ;;
 
     "0 1 0 0")
