@@ -16,7 +16,7 @@ How to Big Red Button on Ubuntu 16.04
 
 4. Compile and run
     make
-    ./bonkers -q -c "bash /home/$USER/play.sh"
+    ./home/$USER/bonkers/bonkers -q -c "bash /home/$USER/bonkers/play.sh"
 
 5. (Optional) Add it as an autorun script
-    ![img](http://i.imgur.com/Z6gWMUc.png)
+    ![img](http://imgur.com/vLB3pnE)
