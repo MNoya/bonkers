@@ -18,14 +18,14 @@ case "$BUTTON_NOW $LID_NOW $BUTTON_PREV $LID_PREV" in
     "1 1"*)
         # Button being pressed, lid open
         if pgrep play; then pkill play; fi
-        play -q ~/bonkers/sound.mp3 &
+        play -q -v 5 ~/bonkers/sound.mp3 &
         ;;
 
     "0 1 0 0")
         # Button not pressed, lid open
         # Previously button was not pressed, lid was closed
         if pgrep play; then pkill play; fi
-        play -q ~/bonkers/drums.mp3 &
+        play -q -v 5 ~/bonkers/drums.mp3 &
         ;;
 
     "0 1 1 0")
